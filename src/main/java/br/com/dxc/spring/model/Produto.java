@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Produto {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //marca o campo Id e avisa o banco para ele se preocupar com a geração da PK
+    @Id @GeneratedValue(strategy =GenerationType.IDENTITY) //marca o campo Id e avisa o banco para ele se preocupar com a geração da PK
     private int id;
     private String titulo;
     private String descricao;

@@ -1,0 +1,8 @@
+br\com\dxc\spring\controllers\HomeController.class
+br\com\dxc\spring\config\JPAConfiguration.class
+br\com\dxc\spring\config\RootConfig.class
+br\com\dxc\spring\controllers\ProdutosController.class
+br\com\dxc\spring\config\WebInit.class
+br\com\dxc\spring\model\Produto.class
+br\com\dxc\spring\daos\ProdutoDAO.class
+br\com\dxc\spring\config\WebConfig.class
