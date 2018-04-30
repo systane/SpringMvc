@@ -1,3 +1,7 @@
+br\com\dxc\spring\model\Preco.class
+br\com\dxc\spring\infra\FileSaver.class
+br\com\dxc\spring\model\TipoPreco.class
+br\com\dxc\spring\validation\ProdutoValidation.class
 br\com\dxc\spring\controllers\HomeController.class
 br\com\dxc\spring\config\JPAConfiguration.class
 br\com\dxc\spring\config\RootConfig.class

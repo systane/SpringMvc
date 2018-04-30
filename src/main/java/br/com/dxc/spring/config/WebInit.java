@@ -5,6 +5,8 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration;
 
 @Configuration
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer{
@@ -24,5 +26,9 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8"); // todo requisição do Spring será utilizado o enconding UTF-8
         return new Filter[]{characterEncodingFilter};
+    }
+
+    @Override protected void customizeRegistration(ServletRegistration.Dynamic registration) { //Configura como o registro de um arquivo multipart será realizado
+        registration.setMultipartConfig(new MultipartConfigElement(""));
     }
 }
