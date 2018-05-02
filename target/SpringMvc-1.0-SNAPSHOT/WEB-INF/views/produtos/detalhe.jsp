@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"  %>
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -10,7 +11,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>${produto.titulo} - Casa di Código</title>
+    <title>${produto.titulo} - Casa do Código</title>
 </head>
 <body class="produto">
     <div id="header-content">
@@ -18,7 +19,7 @@
             <ul>
                 <li>
                     <a href="/carrinho">
-                        Seu carrinho(${carrinhoCompras.quantidade})
+                        Seu carrinho(${carrinho.quantidade})
                     </a>
                 </li>
 
@@ -48,7 +49,7 @@
                 <input type="hidden" value="${produto.id}" name="produtoId"/>
                 <c:forEach items="${produto.precos}" var="preco">
                     <li class="buy-option">
-                        <input type="radio" name="tipo" class="variant-radio"
+                        <input type="radio" name="tipoPreco" class="variant-radio"
                                id="tipo" value="${preco.tipo}"  checked="checked"  />
                         <label  class="variant-label">
                                 ${preco.tipo}

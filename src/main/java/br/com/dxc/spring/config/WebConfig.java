@@ -26,8 +26,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         resolver.setPrefix("/WEB-INF/views/");
         resolver.setSuffix(".jsp");
 
-        resolver.setExposeContextBeansAsAttributes(true); //Seta os beans para ficarem disponiveis como atributos na JSP
-
+        //resolver.setExposeContextBeansAsAttributes(true); Seta os beans para ficarem disponiveis como atributos na JSP
+        resolver.setExposedContextBeanNames("carrinho");
         return resolver;
     }
 
