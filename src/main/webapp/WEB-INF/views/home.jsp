@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -18,7 +19,16 @@
                      muito mais - Casa do Código</title>
     </head>
     <body>
-        <section id="index-section" class="container middle">
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <security:authorize access="isAuthenticated()"> <!-- Mostra os links se o usuário estiver autenticado -->
+                    <li><a href="${s:mvcUrl('PC#listar').build()}">Lista de Produtos</a></li>
+                    <li><a href="${s:mvcUrl('PC#form').build()}">Cadastro de Produtos</a></li>
+                </security:authorize>
+            </ul>
+        </nav>
+
+        <section class="container" >
             <h1 class="cdc-call">Últimos dias com os preços promocionais. Aproveite!</h1>
             <ul class="clearfix book-collection">
 
@@ -37,7 +47,7 @@
                         </div>
                     </c:forEach>
 
-                <!-- Fechando aqui -->
+
                 <div class="row" style="margin-top: 20px">
                     <h2 class="cdc-call">Diferenciais da Casa do Código</h2>
 

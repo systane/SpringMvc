@@ -13,13 +13,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Livros de Java, Android, Iphone, PHP, Ruby e muito mais - Casa do Código</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <c:url value="/resources/css" var="cssPath"></c:url>
+    <c:url value="/resources/js" var="jsPath"></c:url>
+
+    <link rel="stylesheet" href="${cssPath}/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="${jsPath}/bootstrap.js"></script>
 </head>
 <body>
-    <div class="row">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="${s:mvcUrl('HC#home').build()}">Casa do Código</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="${s:mvcUrl('PC#listar').build()}">Lista de Produtos</a></li>
+                    <li><a href="${s:mvcUrl('PC#form').build()}">Cadastro de Produtos</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 15px; margin-left: 15px;">
+        <div class="row">
         <div class="col-md-12">
             <form:form action="${s:mvcUrl('PC#gravar').build() }" method="post" commandName="produto" enctype="multipart/form-data">
                 <div class="row">
@@ -80,6 +104,7 @@
                 </div>
             </form:form>
         </div>
+    </div>
     </div>
 </body>
 </html>

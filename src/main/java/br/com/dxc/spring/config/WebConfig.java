@@ -19,6 +19,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
@@ -32,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 @EnableWebMvc
 @ComponentScan(basePackages = "br.com.dxc.spring") //seta o pacote no qual o spring vai procurar por objetos de configuração, controllers, etc.
 @EnableCaching // Habilita o cache do spring
-public class WebConfig extends WebMvcConfigurerAdapter {
+public class WebConfig extends WebMvcConfigurerAdapter { //WebMvcConfigurerAdapter herda métodos para poder ter mais opções de configurações do spring
 
     @Bean
     public InternalResourceViewResolver resolver(){
@@ -82,7 +83,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         //Configura a cache
         CacheBuilder<Object, Object> builder = CacheBuilder.newBuilder().
                 maximumSize(100). //guarda 100 elementos de produtos
-                expireAfterAccess(5, TimeUnit.MINUTES); //Cache expira a cada 5 minutos
+                expireAfterAccess(60, TimeUnit.MINUTES); //Cache expira a cada 5 minutos
 
         GuavaCacheManager cacheManager = new GuavaCacheManager(); // Guava --> Gerenciador de cache feito pela google
         cacheManager.setCacheBuilder(builder);
@@ -106,4 +107,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return resolver;
     }
 
+    @Override public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) { //Avisa o spring qual é o servlet que vai capturar requisições de recursos (html, js, css). Se é o servlet do spring ou do servlet Container (Tomcat)
+        configurer.enable(); // Com o configurar habilitado, os arquivos de recursos vão para o servlet do TomCat
+    }
 }

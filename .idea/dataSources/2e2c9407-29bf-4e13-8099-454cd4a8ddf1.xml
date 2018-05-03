@@ -969,63 +969,147 @@
     <table id="244" parent="2" name="produto_precos">
       <Engine>InnoDB</Engine>
     </table>
-    <column id="245" parent="243" name="id">
+    <table id="245" parent="2" name="role">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="246" parent="2" name="usuario">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="247" parent="2" name="usuario_role">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="248" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="243" name="descricao">
+    <column id="249" parent="243" name="descricao">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="243" name="paginas">
+    <column id="250" parent="243" name="paginas">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="243" name="titulo">
+    <column id="251" parent="243" name="titulo">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="243" name="dataLancamento">
+    <column id="252" parent="243" name="dataLancamento">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="250" parent="243" name="PRIMARY">
+    <column id="253" parent="243" name="sumarioPath">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="254" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="251" parent="244" name="Produto_id">
+    <column id="255" parent="244" name="Produto_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="244" name="tipo">
+    <column id="256" parent="244" name="tipo">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="244" name="valor">
+    <column id="257" parent="244" name="valor">
       <Position>3</Position>
       <DataType>decimal(19,2)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="254" parent="244" name="FK913E882A70F2D9FE">
+    <index id="258" parent="244" name="FK913E882A70F2D9FE">
       <ColNames>Produto_id</ColNames>
     </index>
-    <foreign-key id="255" parent="244" name="FK913E882A70F2D9FE">
+    <foreign-key id="259" parent="244" name="FK913E882A70F2D9FE">
       <ColNames>Produto_id</ColNames>
       <RefSchemaName>casadocodigo</RefSchemaName>
       <RefTableName>produto</RefTableName>
       <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="260" parent="245" name="nome">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="261" parent="245" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>nome</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="262" parent="246" name="email">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="246" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="246" name="senha">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="265" parent="246" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>email</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="266" parent="247" name="Usuario_email">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="247" name="roles_nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="268" parent="247" name="roles_nome">
+      <ColNames>roles_nome</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="269" parent="247" name="FKFBB6DB275E9FF15D">
+      <ColNames>Usuario_email</ColNames>
+    </index>
+    <index id="270" parent="247" name="FKFBB6DB277EA51B6D">
+      <ColNames>roles_nome</ColNames>
+    </index>
+    <key id="271" parent="247" name="roles_nome">
+      <ColNames>roles_nome</ColNames>
+      <UnderlyingIndexName>roles_nome</UnderlyingIndexName>
+    </key>
+    <foreign-key id="272" parent="247" name="FKFBB6DB275E9FF15D">
+      <ColNames>Usuario_email</ColNames>
+      <RefSchemaName>casadocodigo</RefSchemaName>
+      <RefTableName>usuario</RefTableName>
+      <RefColNames>email</RefColNames>
+    </foreign-key>
+    <foreign-key id="273" parent="247" name="FKFBB6DB277EA51B6D">
+      <ColNames>roles_nome</ColNames>
+      <RefSchemaName>casadocodigo</RefSchemaName>
+      <RefTableName>role</RefTableName>
+      <RefColNames>nome</RefColNames>
     </foreign-key>
   </database-model>
 </dataSource>

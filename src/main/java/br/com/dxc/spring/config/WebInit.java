@@ -11,11 +11,11 @@ import javax.servlet.ServletRegistration;
 @Configuration
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer{
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{RootConfig.class};
-    }
+        return new Class[]{RootConfig.class, SecurityConfiguration.class, WebConfig.class, JPAConfiguration.class};
+    } // Spring vai subir as configurações assim que o sistema iniciar, e não no primeiro acesso a aplicação.
 
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebConfig.class, JPAConfiguration.class}; //Seta a classe que vai mapear o contexto da aplicação para o spring
+        return new Class[]{}; //Seta a classe que vai mapear o contexto da aplicação para o spring a partir da primeira inicialização
     }
 
     protected String[] getServletMappings() {
