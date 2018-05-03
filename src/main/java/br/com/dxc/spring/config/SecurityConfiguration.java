@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 //@EnableWebSecurity
 @EnableWebMvcSecurity //Anotação para habilitar para o spring q essa classe será de configuração de segurança
@@ -25,10 +26,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
                 .antMatchers(HttpMethod.POST, "/produtos").hasRole("ADMIN")
                 .antMatchers(HttpMethod.GET, "/produtos").hasRole("ADMIN")
                 .antMatchers("/produtos/**").permitAll()
+                .antMatchers("/resources/**").permitAll()
                 .antMatchers(HttpMethod.GET,  "/produtos/").hasRole("ADMIN")
                 .antMatchers("/").permitAll()
-                .anyRequest().authenticated().and().formLogin();//verifica se todo request está autenticado
+                .anyRequest().authenticated().and().formLogin()//verifica se todo request está autenticado
                                                                 // Senão tiver, redirecionar para o formLogin
+                .loginPage("/login").permitAll()
+                .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")); //Adiciona uma url para logout
+
 
     }
 

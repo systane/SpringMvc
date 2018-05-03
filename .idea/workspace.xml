@@ -7,224 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c658c78e-7c81-4f3f-b988-39b5ebb1d8df" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SpringSecurityFilterConfiguration.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/UsuarioDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Role.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Usuario.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMvc_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMvc_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e2c9407-29bf-4e13-8099-454cd4a8ddf1.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/2e2c9407-29bf-4e13-8099-454cd4a8ddf1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/LoginController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cabecalho.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginForm.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SpringMvc.iml" afterPath="$PROJECT_DIR$/SpringMvc.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/.hsdoc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/component.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-arrows-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-arrows-dark.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-arrows.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-arrows.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-basic.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether-theme-basic.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/css/tether.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/js/tether.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/dist/js/tether.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/1-Overview/1-why_you_should_use_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/1-Overview/2-repositioning.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/1-Overview/3-why_we_dont_support_IE_8.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/2-Examples/1-list_of_examples.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/2-Examples/2-projects_using_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/3-Advanced/1-embedding_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/3-Advanced/2-extending_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/coffee/intro.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/css/intro.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/intro.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/js/intro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/js/markAttachment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/sass/intro.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/browser-demo.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/coffee/welcome.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/css/browser-demo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/css/prism.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/css/welcome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/js/drop.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/js/log.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/js/tether-v0.1.3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/js/welcome.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/sass/_inline-block.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/sass/browser-demo.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/docs/welcome/sass/welcome.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/chosen/chosen-sprite.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/chosen/chosen-sprite@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/chosen/chosen.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/chosen/chosen.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/chosen/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/common/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/content-visible/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/dolls/dolls.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/dolls/dolls.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/dolls/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/element-scroll/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/enable-disable/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/facebook/facebook.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/facebook/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/out-of-bounds/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/pin/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/resources/css/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/resources/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/resources/js/log.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/scroll/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/simple/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/testbed/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/tooltip/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/viewport/colors.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/examples/viewport/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/gulpfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/helpers/_tether-theme-arrows.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/helpers/_tether-theme-basic.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/helpers/_tether.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/mixins/_inline-block.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/mixins/_pie-clearfix.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/tether-theme-arrows-dark.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/tether-theme-arrows.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/tether-theme-basic.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/css/tether.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/abutment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/constraint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/markAttachment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/shift.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/tether.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tether-1.3.3/src/js/utils.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/carrinho/itens.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/carrinho/itens.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/home.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/detalhe.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/detalhe.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/form.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/form.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/lista.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/lista.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap-grid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap-reboot.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/js/bootstrap.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/js/bootstrap.bundle.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/js/bootstrap.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/js/jquery-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/.hsdoc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/component.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-arrows-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-arrows-dark.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-arrows.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-arrows.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-basic.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether-theme-basic.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/css/tether.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/js/tether.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/dist/js/tether.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/1-Overview/1-why_you_should_use_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/1-Overview/2-repositioning.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/1-Overview/3-why_we_dont_support_IE_8.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/2-Examples/1-list_of_examples.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/2-Examples/2-projects_using_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/3-Advanced/1-embedding_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/3-Advanced/2-extending_tether.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/coffee/intro.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/css/intro.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/intro.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/js/intro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/js/markAttachment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/sass/intro.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/browser-demo.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/coffee/welcome.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/css/browser-demo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/css/prism.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/css/welcome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/js/drop.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/js/log.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/js/tether-v0.1.3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/js/welcome.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/sass/_inline-block.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/sass/browser-demo.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/docs/welcome/sass/welcome.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/chosen/chosen-sprite.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/chosen/chosen-sprite@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/chosen/chosen.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/chosen/chosen.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/chosen/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/common/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/content-visible/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/dolls/dolls.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/dolls/dolls.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/dolls/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/element-scroll/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/enable-disable/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/facebook/facebook.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/facebook/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/out-of-bounds/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/pin/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/resources/css/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/resources/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/resources/js/log.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/scroll/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/simple/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/testbed/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/tooltip/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/viewport/colors.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/examples/viewport/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/gulpfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/helpers/_tether-theme-arrows.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/helpers/_tether-theme-basic.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/helpers/_tether.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/mixins/_inline-block.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/mixins/_pie-clearfix.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/tether-theme-arrows-dark.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/tether-theme-arrows.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/tether-theme-basic.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/css/tether.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/abutment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/constraint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/markAttachment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/shift.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/tether.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/tether-1.3.3/src/js/utils.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -290,55 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsuarioDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/UsuarioDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="20" column="77" lean-forward="true" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lista.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebInit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="17" column="133" lean-forward="false" selection-start-line="17" selection-start-column="133" selection-end-line="17" selection-end-column="133" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+              <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -347,8 +101,8 @@
       <file leaf-file-name="form.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="34">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -400,18 +154,28 @@
       <file leaf-file-name="detalhe.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <file leaf-file-name="itens.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="153">
+              <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -425,8 +189,8 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -442,6 +206,7 @@
       <find>spring</find>
       <find>repos</find>
       <find>release</find>
+      <find>https://cdn.rawgit.com/casadocodigo/resources/imagens/cdc-logo.svg</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -480,14 +245,11 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Carrinho.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/CarrinhoComprasController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/DadosPagamento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JsonViewResolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SpringSecurityFilterConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Role.java" />
@@ -496,10 +258,16 @@
         <option value="src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.produto" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cabecalho.jsp" />
       </list>
     </option>
   </component>
@@ -634,7 +402,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="daos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
@@ -729,6 +515,7 @@
       <recent name="br.com.dxc.spring.daos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp\WEB-INF\views" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\resources\properties" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp\WEB-INF\views\produtos" />
@@ -1015,12 +802,12 @@
       <workItem from="1525088756213" duration="3979000" />
       <workItem from="1525261290604" duration="25648000" />
       <workItem from="1525349760527" duration="9323000" />
-      <workItem from="1525359841946" duration="9194000" />
+      <workItem from="1525359841946" duration="13601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153196000" />
+    <option name="totallyTimeSpent" value="157603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1064,45 +851,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36767036" sideWeight="0.5387994" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12079063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.48682284" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.4590044" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36767036" sideWeight="0.4612006" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.48535872" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1126,27 +874,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpringMvc.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar!/javax/persistence/Converter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0-sources.jar!/javax/persistence/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1258,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Carrinho.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1287,13 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1368,14 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1410,14 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1434,19 +1131,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.produto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="34" column="87" lean-forward="false" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,37 +1210,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="153">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+        <state relative-caret-position="187">
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cabecalho.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        <state relative-caret-position="-819">
+          <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Carrinho.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="46" column="25" lean-forward="false" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/CarrinhoItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/carrinho/itens.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,24 +9,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <title>Livros de Java, SOA, Android, iPhone, Ruby on Rails e
-                     muito mais - Casa do Código</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <ul class="nav navbar-nav">
-                <security:authorize access="isAuthenticated()"> <!-- Mostra os links se o usuário estiver autenticado -->
-                    <li><a href="${s:mvcUrl('PC#listar').build()}">Lista de Produtos</a></li>
-                    <li><a href="${s:mvcUrl('PC#form').build()}">Cadastro de Produtos</a></li>
-                </security:authorize>
-            </ul>
-        </nav>
+<%@ include file="/WEB-INF/views/cabecalho.jsp" %>
 
         <section class="container" >
             <h1 class="cdc-call">Últimos dias com os preços promocionais. Aproveite!</h1>
