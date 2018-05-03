@@ -70,5 +70,5 @@
                 </div>
             </ul>
         </section>
-    </body>
-</html>
+
+<%@include file="/WEB-INF/views/rodape.jsp"%>

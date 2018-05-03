@@ -63,5 +63,5 @@
                 <span><fmt:formatDate pattern="dd/MM/yyyy" value="${produto.dataLancamento.time}"></fmt:formatDate></span>
             </p>
         </section>
-    </div>
-</body>
+
+<%@include file="/WEB-INF/views/rodape.jsp"%>

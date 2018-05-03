@@ -40,5 +40,5 @@
                </tbody>
            </table>
         </div>
-    </body>
-</html>
+
+<%@include file="/WEB-INF/views/rodape.jsp"%>
