@@ -1,6 +1,7 @@
 package br.com.dxc.spring.model;
 
 import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
@@ -11,10 +12,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Component
-@Scope(value = WebApplicationContext.SCOPE_SESSION)
+@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class Carrinho implements Serializable { //Sempre q um bean do Spring tiver o scope de SESSION, é interessante implementar Serializable
                                                 // pois toda vez o servidor "salva" uma sessão, ele salva o bean em arquivo e quando o usuário voltar
                                                 // a utilizar a sessão o servidor retorna o arquivo
+                                                //proxyMode = TargetClass --> Significa que o próprio Spring vai fz um proxy para resolver as dependencias nas classes alvo do Carrinho
 
     private static final long serialVersionUID = 1L;
 
@@ -54,5 +56,11 @@ public class Carrinho implements Serializable { //Sempre q um bean do Spring tiv
         }
 
         return total;
+    }
+
+    public void remover(Integer produtoId, TipoPreco tipoPreco) {
+        Produto produto = new Produto();
+        produto.setId(produtoId);
+        itens.remove(new CarrinhoItem(produto, tipoPreco));
     }
 }

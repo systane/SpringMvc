@@ -21,6 +21,7 @@
     <h1 style="text-align: center">Lista de Produtos</h1>
 
     <div>${sucesso}</div>
+    <div>${falha}</div>
 
     <div class="container">
         <table class="table table-striped">

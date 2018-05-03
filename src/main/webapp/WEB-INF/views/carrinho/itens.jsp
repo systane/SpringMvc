@@ -60,8 +60,8 @@
                                     <td><input type="number" min="0" id="quantidade" name="quantidade" value="${carrinho.getQuantidade(item)}"></td>
                                     <td>${carrinho.getTotal(item)}</td>
                                     <td>
-                                        <form action="" method="post">
-                                            <input alt="Excluir" title="Excluir" >
+                                        <form action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }" method="post">
+                                            <input type="image" alt="Excluir" title="Excluir"  value="Excluir">
                                         </form>
                                     </td>
                                 </tr>
@@ -70,7 +70,9 @@
                         <tfoot>
                         <tr>
                             <td>
-                                <input class="btn btn-primary" type="submit" value="Finalizar compra">
+                                <form action="${s:mvcUrl('PC#finalizar').build()}" method="post">
+                                    <input class="btn btn-primary" type="submit" value="Finalizar compra">
+                                </form>
                             </td>
                             <td>${carrinho.total}</td>
                         </tr>

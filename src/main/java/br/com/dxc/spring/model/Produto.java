@@ -3,13 +3,15 @@ package br.com.dxc.spring.model;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
-public class Produto {
+public class Produto implements Serializable{
+    private static final long serialVersionUID = 1L;
 
     @Id @GeneratedValue(strategy =GenerationType.IDENTITY) //marca o campo Id e avisa o banco para ele se preocupar com a geração da PK
     private int id;
