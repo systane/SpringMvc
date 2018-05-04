@@ -2,6 +2,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"  %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -10,24 +11,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<tags:pageTemplate titulo="Livros de Java, Android, iOS, Mobile, e muito mais...">
-        <div class="container">
-            <div id="header-content">
-                <nav id="main-nav">
-                    <ul>
-                        <li>
-                            <a href="${s:mvcUrl('CCC#itens').build()}">
-                                Seu carrinho(${carrinho.quantidade})
-                            </a>
-                        </li>
+<tags:pageTemplate titulo="Seu carrinho de compras">
 
-                        <li>
-                            <a href="/pages/sobre-a-casa-do-codigo">Sobre nós</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <jsp:attribute name="extraScripts">
+        <script>
+            console.log("Finalização de compra de ${carrinho.quantidade} itens");
+        </script>
+    </jsp:attribute>
 
+    <jsp:body>
+        <div class="container" style="margin-top: 60px; margin-bottom: 60px">
             <section>
                 <h2> Seu carrinho de compras</h2>
 
@@ -63,7 +56,7 @@
                             </tbody>
                             <tfoot>
                             <tr>
-                                <td>
+                                <td colspan="4">
                                     <form:form action="${s:mvcUrl('PC#finalizar').build()}" method="post">
                                         <input class="btn btn-primary" type="submit" value="Finalizar compra">
                                     </form:form>
@@ -76,5 +69,5 @@
                 </form>
             </section>
         </div>
-
+    </jsp:body>
 </tags:pageTemplate>

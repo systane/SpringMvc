@@ -6,9 +6,10 @@
   Time: 5:05 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ tag pageEncoding="UTF-8" language="java" %>
+<%@ tag language="java" pageEncoding="ISO-8859-1"%>
 <%@ attribute name="bodyClass" %>
 <%@ attribute name="titulo" required="true" %>
+<%@ attribute name="extraScripts" fragment="true" %>
 
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-        <title>${titulo} - Casa do CÃ³digo</title>
+        <title>${titulo} - Casa do Código</title>
 
         <c:url value="/resources/css" var="cssPath"></c:url>
         <c:url value="/resources/js" var="jsPath"></c:url>
@@ -50,6 +51,8 @@
         <jsp:doBody /> <!-- Tag para colocar todo o conteudo da tag dentro do jsp:doBody -->
 
         <%@include file="/WEB-INF/views/rodape.jsp"%>
+    
+        <jsp:invoke fragment="extraScripts"/> <!-- Código que será adicionado somente a uma(s) página(s) especifica(s) -->
 
     </body>
 </html>

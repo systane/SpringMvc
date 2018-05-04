@@ -44,7 +44,7 @@
                     </c:forEach>
                 </ul>
 
-                <button type="submit" title="Compre agora '${produto.titulo}' !">Comprar</button>
+                <button class="btn btn-primary" type="submit" title="Compre agora '${produto.titulo}' !">Comprar</button>
 
                 <%--&lt;%&ndash;<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">&ndash;%&gt; Campo utilizado para validar requisições com o csrf token--%>
             </form:form>
