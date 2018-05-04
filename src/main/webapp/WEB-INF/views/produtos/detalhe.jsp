@@ -3,6 +3,8 @@
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"  %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -10,8 +12,8 @@
   Time: 3:55 PM
   To change this template use File | Settings | File Templates.
 --%>
+    <tags:pageTemplate titulo="${produto.titulo}">
 
-        <%@ include file="/WEB-INF/views/cabecalho.jsp" %>
 
         <article id="${produto.id}">
             <div id="product-overview">
@@ -63,5 +65,4 @@
                 <span><fmt:formatDate pattern="dd/MM/yyyy" value="${produto.dataLancamento.time}"></fmt:formatDate></span>
             </p>
         </section>
-
-<%@include file="/WEB-INF/views/rodape.jsp"%>
+    </tags:pageTemplate>

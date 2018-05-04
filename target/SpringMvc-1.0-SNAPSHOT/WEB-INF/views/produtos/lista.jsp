@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -9,7 +10,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/views/cabecalho.jsp" %>
+<tags:pageTemplate titulo="Livros de Java, Android, iOS, Mobile, e muito mais...">
         <div class="container">
             <h1>Lista de Produtos</h1>
 
@@ -41,4 +42,4 @@
            </table>
         </div>
 
-<%@include file="/WEB-INF/views/rodape.jsp"%>
+</tags:pageTemplate>

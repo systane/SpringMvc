@@ -1,6 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"  %>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"  %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: lsilva49
@@ -8,17 +10,19 @@
   Time: 10:35 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/views/cabecalho.jsp" %>
 
-        <div class="container" >
+
+<tags:pageTemplate titulo="Livros de Java, Android, iOS, Mobile, e muito mais...">
+
+
+        <div class="container" style="margin-bottom: 50px; margin-top: 50px">
             <div class="row">
                 <div class="col-md-12">
                     <form:form action="${s:mvcUrl('PC#gravar').build() }" method="post" commandName="produto" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="form-group col-md-3 ">
+                            <div class="form-group col-md-3">
                                 <label>Titulo</label>
-                                <form:input class="form-control" path="titulo"/>
+                                <form:input class="form-control" path="titulo" cssStyle="float: none; border: 1px solid #ced4da"/>
                                 <small class="form-text text-muted">
                                     <form:errors path="titulo" />
                                 </small>
@@ -36,7 +40,7 @@
                         <div class="row">
                             <div class="form-group col-md-3">
                                 <label>Páginas</label>
-                                <form:input class="form-control" path="paginas"/>
+                                <form:input class="form-control" path="paginas" cssStyle="float: none; border: 1px solid #ced4da"/>
                                 <small class="form-text text-muted">
                                     <form:errors path="paginas" />
                                 </small>
@@ -45,7 +49,7 @@
                         <div class="row">
                             <div class="form-group col-md-3">
                                 <label>Data lançamento</label>
-                                <form:input class="form-control" path="dataLancamento" />
+                                <form:input class="form-control" path="dataLancamento" cssStyle="border: 1px solid #ced4da" />
                                 <small class="form-text text-muted">
                                     <form:errors path="dataLancamento"/>
                                 </small>
@@ -55,7 +59,7 @@
                             <c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
                                 <div class="form-group col-md-1">
                                     <label>${tipoPreco}</label>
-                                    <form:input class="form-control" path="precos[${status.index}].valor"/>
+                                    <form:input class="form-control" cssStyle="border:1px solid #ced4da" path="precos[${status.index}].valor" />
                                     <form:hidden path="precos[${status.index}].tipo" value="${tipoPreco}"/>
                                 </div>
                             </c:forEach>
@@ -75,5 +79,4 @@
                 </div>
             </div>
         </div>
-
-<%@include file="/WEB-INF/views/rodape.jsp"%>
+</tags:pageTemplate>
