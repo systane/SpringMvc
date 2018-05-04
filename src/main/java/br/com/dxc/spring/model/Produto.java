@@ -5,6 +5,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
@@ -26,7 +27,7 @@ public class Produto implements Serializable{
     private Calendar dataLancamento;
 
     @ElementCollection //relaciona o preço como parte do produto
-    private List<Preco> precos;
+    private List<Preco> precos = new ArrayList<>();
 
     private String sumarioPath;
 

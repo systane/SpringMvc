@@ -15,7 +15,7 @@
 
     <jsp:attribute name="extraScripts">
         <script>
-            console.log("Finalização de compra de ${carrinhoCompras.quantidade} itens");
+            console.log("Finalização de compra de ${carrinho.quantidade} itens");
         </script>
     </jsp:attribute>
 

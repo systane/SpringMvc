@@ -1,12 +1,11 @@
 package br.com.dxc.spring.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.Filter;
-import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletRegistration;
+import javax.servlet.*;
 
 @Configuration
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer{
@@ -30,5 +29,11 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override protected void customizeRegistration(ServletRegistration.Dynamic registration) { //Configura como o registro de um arquivo multipart será realizado
         registration.setMultipartConfig(new MultipartConfigElement(""));
+    }
+
+    @Override public void onStartup(ServletContext servletContext) throws ServletException {
+        super.onStartup(servletContext);
+        servletContext.addListener(RequestContextListener.class); //Para poder setar o profile, primeiro é necessário escutar os contextos da aplicação
+        servletContext.setInitParameter("spring.profiles.active", "dev"); //define que o profile ativo para a aplicação será o dev
     }
 }

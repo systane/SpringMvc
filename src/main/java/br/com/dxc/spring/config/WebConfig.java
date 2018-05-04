@@ -18,10 +18,14 @@ import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -109,5 +113,16 @@ public class WebConfig extends WebMvcConfigurerAdapter { //WebMvcConfigurerAdapt
 
     @Override public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) { //Avisa o spring qual é o servlet que vai capturar requisições de recursos (html, js, css). Se é o servlet do spring ou do servlet Container (Tomcat)
         configurer.enable(); // Com o configurar habilitado, os arquivos de recursos vão para o servlet do TomCat
+    }
+
+    //Adiciona um interceptor para lidar com a mudança de localidade do front
+    @Override public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new LocaleChangeInterceptor());
+    }
+
+    //Configura o spring para resolver o locale através do cookie
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new CookieLocaleResolver();
     }
 }
