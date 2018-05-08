@@ -21,8 +21,8 @@ public class ProdutoDAO {
     public void gravar(Produto produto){ manager.persist(produto);}
 
 
-    public List<Produto> listar() {
-        return manager.createQuery("select p from Produto p", Produto.class).getResultList();
+    public List<Produto> listar() { // join fetch faz o carregamento  dos precosna hr de executar a query de busca pelos produtos
+        return manager.createQuery("select distinct (p) from Produto p", Produto.class).getResultList();
     }
 
     public Produto find(Integer id){ //query para pegar o produto e o preço de um produto

@@ -1,6 +1,7 @@
 package br.com.dxc.spring.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -24,7 +25,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
     @Override protected Filter[] getServletFilters() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8"); // todo requisição do Spring será utilizado o enconding UTF-8
-        return new Filter[]{characterEncodingFilter};
+        return new Filter[]{characterEncodingFilter, new OpenEntityManagerInViewFilter()}; //Deixa o entityManager aberto até na jsp para poder realizar um lazy initialization
     }
 
     @Override protected void customizeRegistration(ServletRegistration.Dynamic registration) { //Configura como o registro de um arquivo multipart será realizado

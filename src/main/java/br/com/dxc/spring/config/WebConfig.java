@@ -132,6 +132,7 @@ public class WebConfig extends WebMvcConfigurerAdapter { //WebMvcConfigurerAdapt
     @Bean
     public MailSender mailSender(){ //configura um mailSender para ser utilizado pelo spring
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+        Java
 
         mailSender.setHost("smtp.gmail.com");
         mailSender.setUsername("fernandinho.sjrp@gmail.com");

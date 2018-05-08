@@ -7,18 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c658c78e-7c81-4f3f-b988-39b5ebb1d8df" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/logging.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMvc_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMvc_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ExceptionHandlerController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SpringMvc.iml" afterPath="$PROJECT_DIR$/SpringMvc.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JPAConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JPAConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/controllers/ProdutoControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/controllers/ProdutoControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/lista.jsp" afterPath="$PROJECT_DIR$/target/SpringMvc-1.0-SNAPSHOT/WEB-INF/views/produtos/lista.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,11 +89,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProdutoControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/dxc/spring/controllers/ProdutoControllerTest.java">
+      <file leaf-file-name="ProdutosController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="68">
+              <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="89" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionHandlerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ExceptionHandlerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,61 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuario" pinned="false" current-in-tab="false">
-        <entry file="das://src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.usuario">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagamentoController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JPAConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JPAConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="30" column="47" lean-forward="false" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
+            <state relative-caret-position="204">
+              <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
               <folding>
                 <element signature="e#6366#6367#0" expanded="true" />
                 <element signature="e#6415#6416#0" expanded="true" />
@@ -166,31 +124,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/RootConfig.java">
+      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logging.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/logging.properties">
+      <file leaf-file-name="lista.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+            <state relative-caret-position="187">
+              <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebInit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java">
+      <file leaf-file-name="ProdutoDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="35" column="151" lean-forward="false" selection-start-line="35" selection-start-column="151" selection-end-line="35" selection-end-column="151" />
+            <state relative-caret-position="124">
+              <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -240,9 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java" />
-        <option value="src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.produto_precos" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.css" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/validation/ProdutoValidation.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/message.properties.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/message.properties" />
@@ -254,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/DadosPagamento.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JsonViewResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SpringSecurityFilterConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Usuario.java" />
@@ -266,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rodape.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/detalhe.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" />
@@ -275,14 +228,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/message_pt.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/message_en_US.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/message.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/ProdutoDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/builders/ProdutoBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Produto.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/console.sql" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/config/DataSourceConfigurationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/daos/ProdutoDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/dxc/spring/controllers/ProdutoControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/SecurityConfiguration.java" />
@@ -290,6 +241,13 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JPAConfiguration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.usuario" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ExceptionHandlerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java" />
       </list>
     </option>
@@ -423,6 +381,15 @@
               <item name="SpringMvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,6 +408,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="produtos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringMvc" type="b2602c69:ProjectViewProjectNode" />
@@ -520,7 +497,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="springmvc" />
-    <property name="SearchEverywhereHistoryKey" value="ini&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/config/WebInit.java&#10;we&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/config/WebConfig.java&#10;Produto&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java&#10;pom&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/pom.xml&#10;prod&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
+    <property name="SearchEverywhereHistoryKey" value="produtoda&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java&#10;pre&#9;PSI&#9;JAVA://br.com.dxc.spring.model.Preco&#10;ini&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/config/WebInit.java&#10;we&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/config/WebConfig.java&#10;Produto&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java&#10;pom&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/pom.xml&#10;prod&#9;FILE&#9;file://C:/projetos/petrobras/workspace_intellij/SpringMvc/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java" />
     <property name="extract.method.default.visibility" value="public" />
   </component>
   <component name="RecentsManager">
@@ -531,8 +508,8 @@
       <recent name="br.com.dxc.spring.daos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\resources\properties" />
       <recent name="C:\projetos\petrobras\workspace_intellij\SpringMvc\src\main\webapp\WEB-INF\views\produtos" />
     </key>
@@ -879,7 +856,7 @@
       <workItem from="1525088756213" duration="3979000" />
       <workItem from="1525261290604" duration="25648000" />
       <workItem from="1525349760527" duration="9323000" />
-      <workItem from="1525359841946" duration="48457000" />
+      <workItem from="1525359841946" duration="52681000" />
     </task>
     <servers />
   </component>
@@ -916,7 +893,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192459000" />
+    <option name="totallyTimeSpent" value="196683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -960,6 +937,45 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36767036" sideWeight="0.5387994" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12079063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.48682284" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.4590044" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36767036" sideWeight="0.4612006" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.48535872" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25475842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -983,20 +999,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -1026,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/CarrinhoComprasController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1057,18 +1052,6 @@
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1253#1254#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1283,22 +1266,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/builders/ProdutoBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -1397,14 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" column="151" lean-forward="false" selection-start-line="35" selection-start-column="151" selection-end-line="35" selection-end-column="151" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/56f1b3d7/2e2c9407-29bf-4e13-8099-454cd4a8ddf1/casadocodigo.usuario">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1429,17 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
-          <folding>
-            <element signature="e#6366#6367#0" expanded="true" />
-            <element signature="e#6415#6416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/JPAConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -1458,9 +1406,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/PagamentoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        <state relative-caret-position="167">
+          <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/produtos/lista.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/model/Preco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="175" lean-forward="false" selection-start-line="27" selection-start-column="175" selection-end-line="27" selection-end-column="175" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/daos/ProdutoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ProdutosController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="89" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/controllers/ExceptionHandlerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/dxc/spring/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+          <folding>
+            <element signature="e#6366#6367#0" expanded="true" />
+            <element signature="e#6415#6416#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
