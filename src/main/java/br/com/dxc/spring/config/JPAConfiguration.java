@@ -24,18 +24,20 @@ public class JPAConfiguration {
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         factoryBean.setJpaVendorAdapter(vendorAdapter); //informa a especificação do JPA que a aplicação vai utilizar
-        Properties properties = aditionalProperties(factoryBean);
+        Properties properties = additionalProperties();
+        factoryBean.setJpaProperties(properties);
 
         return factoryBean;
     }
 
-    public Properties aditionalProperties(LocalContainerEntityManagerFactoryBean factoryBean) {
-        Properties properties = new Properties();
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");//Configura as propriedades do hibernate (dialeto que o hibernate comunicará com o BD)
-        properties.setProperty("hibernate.show_sql", "true"); //Permite ver o sql gerado pelo hibernate
-        properties.setProperty("hibernate.hbm2ddl.auto", "update"); //Toda vez que o modelo for atualizado, o hibernate gerará/atualizará o banco
-        factoryBean.setJpaProperties(properties);
-        return properties;
+    @Bean
+    @Profile("dev")
+    public Properties additionalProperties() {
+        Properties props = new Properties();
+        props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        props.setProperty("hibernate.show_sql", "true");
+        props.setProperty("hibernate.hbm2ddl.auto", "update");
+        return props;
     }
 
     @Bean

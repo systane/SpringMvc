@@ -14,6 +14,8 @@ import org.springframework.format.datetime.DateFormatter;
 import org.springframework.format.datetime.DateFormatterRegistrar;
 import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
@@ -31,6 +33,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 @Configuration
@@ -124,5 +127,24 @@ public class WebConfig extends WebMvcConfigurerAdapter { //WebMvcConfigurerAdapt
     @Bean
     public LocaleResolver localeResolver(){
         return new CookieLocaleResolver();
+    }
+
+    @Bean
+    public MailSender mailSender(){ //configura um mailSender para ser utilizado pelo spring
+        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+
+        mailSender.setHost("smtp.gmail.com");
+        mailSender.setUsername("fernandinho.sjrp@gmail.com");
+        mailSender.setPassword("lspqlsseflhxtrax");
+        mailSender.setPort(587);
+
+        Properties mailProperties = new Properties();
+        mailProperties.put("mail.smtp.auth", true); //Habilita o sistema para usar autenticação
+        mailProperties.put("mail.smtp.starttls.enable", true); //Habilita o sistema para usar tls (obrigatório na comunicação com servidores seguros)
+
+        mailSender.setJavaMailProperties(mailProperties);
+
+        return mailSender;
+
     }
 }

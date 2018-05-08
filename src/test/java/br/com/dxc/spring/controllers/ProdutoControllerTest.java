@@ -1,9 +1,6 @@
 package br.com.dxc.spring.controllers;
 
-import br.com.dxc.spring.config.DataSourceConfigurationTest;
-import br.com.dxc.spring.config.JPAConfiguration;
-import br.com.dxc.spring.config.WebConfig;
-import br.com.dxc.spring.config.WebInit;
+import br.com.dxc.spring.config.*;
 import br.com.dxc.spring.daos.ProdutoDAO;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,9 +17,12 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import javax.servlet.Filter;
+
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {JPAConfiguration.class, WebConfig.class, DataSourceConfigurationTest.class})
+@ContextConfiguration(classes = {JPAConfiguration.class, WebConfig.class, DataSourceConfigurationTest.class,
+        SecurityConfiguration.class})
 @ActiveProfiles("test")
 public class ProdutoControllerTest {
 
@@ -31,9 +31,12 @@ public class ProdutoControllerTest {
 
     private MockMvc mockMvc;
 
+    @Autowired
+    private Filter springSecurityFilterChain;
+
     @Before
     public void setup(){
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(wac).addFilter(springSecurityFilterChain).build();
     }
 
     @Test
