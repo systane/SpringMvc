@@ -37,7 +37,7 @@ public class HomeController {
     }
 
     @ResponseBody
-    @RequestMapping("/url-magica-ahfrg172vbafgaafga#$@$!$#@$afgadsff*&*%%$")
+    @RequestMapping("/url-magica-aaaaaaaaaaaa")
     @Transactional
     public String urlMagica(){
         Usuario usuario = new Usuario();
