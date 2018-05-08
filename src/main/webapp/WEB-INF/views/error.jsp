@@ -18,7 +18,7 @@
 
         <!--
             Mensagem: ${exception.message}
-            <c:forEach items="${exception.strackTrace}" var="stack">
+            <c:forEach items="${exception.stackTrace}" var="stack">
                 ${stk}
             </c:forEach>
         -->
