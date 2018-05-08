@@ -44,7 +44,7 @@ public class HomeController {
         usuario.setNome("Admin");
         usuario.setEmail("admin@dxc.com.br");
         usuario.setSenha("$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu"); //123456
-        usuario.setRoles(Arrays.asList(new Role("ADMIN")));
+        usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
 
         usuarioDao.gravar(usuario);
 
