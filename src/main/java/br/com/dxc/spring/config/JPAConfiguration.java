@@ -16,7 +16,7 @@ import java.util.Properties;
 public class JPAConfiguration {
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource){//recebe o dataSource através da injeção de independencias do Spring
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource, Properties addtionalProperties){//recebe o dataSource através da injeção de independencias do Spring
 
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setPackagesToScan("br.com.dxc.spring.model"); //configura onde o spring procurará as entidades do banco
@@ -24,8 +24,7 @@ public class JPAConfiguration {
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         factoryBean.setJpaVendorAdapter(vendorAdapter); //informa a especificação do JPA que a aplicação vai utilizar
-        Properties properties = additionalProperties();
-        factoryBean.setJpaProperties(properties);
+        factoryBean.setJpaProperties(addtionalProperties);
 
         return factoryBean;
     }

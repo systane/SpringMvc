@@ -11,7 +11,7 @@ import javax.servlet.*;
 @Configuration
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer{
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{RootConfig.class, SecurityConfiguration.class, WebConfig.class, JPAConfiguration.class};
+        return new Class[]{RootConfig.class, SecurityConfiguration.class, WebConfig.class, JPAConfiguration.class, JPAProductionConfiguration.class};
     } // Spring vai subir as configurações assim que o sistema iniciar, e não no primeiro acesso a aplicação.
 
     protected Class<?>[] getServletConfigClasses() {
@@ -32,9 +32,11 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
         registration.setMultipartConfig(new MultipartConfigElement(""));
     }
 
-    @Override public void onStartup(ServletContext servletContext) throws ServletException {
-        super.onStartup(servletContext);
-        servletContext.addListener(RequestContextListener.class); //Para poder setar o profile, primeiro é necessário escutar os contextos da aplicação
-        servletContext.setInitParameter("spring.profiles.active", "dev"); //define que o profile ativo para a aplicação será o dev
-    }
+//
+//    @Override public void onStartup(ServletContext servletContext) throws ServletException {
+//        super.onStartup(servletContext);
+//        servletContext.addListener(RequestContextListener.class); //Para poder setar o profile, primeiro é necessário escutar os contextos da aplicação
+//        servletContext.setInitParameter("spring.profiles.active", "dev"); //define que o profile ativo para a aplicação será o dev
+//    }
+//
 }
