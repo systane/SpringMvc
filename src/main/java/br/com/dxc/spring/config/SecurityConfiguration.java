@@ -28,6 +28,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
                 .antMatchers("/resources/**").permitAll()
                 .antMatchers(HttpMethod.GET,  "/produtos/").hasRole("ADMIN")
                 .antMatchers("/").permitAll()
+                .antMatchers("/url-magica-ahfrg172vbafgaafga#$@$!$#@$afgadsff*&*%%$").permitAll()
                 .anyRequest().authenticated().and().formLogin()//verifica se todo request está autenticado
                                                                 // Senão tiver, redirecionar para o formLogin
                 .loginPage("/login").permitAll()
